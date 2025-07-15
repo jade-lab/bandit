@@ -122,8 +122,8 @@ conference:
         ---
         Information:
         - [Submit a Paper](https://wi-lab.com/cyberchair/2025/bigdata25/scripts/ws_submit.php)
-        - [Read the Submission Details](/bandit/cfp/).
-    - text: Remember to [submit your paper](https://wi-lab.com/cyberchair/2025/bigdata25/scripts/ws_submit.php) before **Sep 14** for the first cycle and to use the [IEEE 2-column format](https://www.ieee.org/conferences/publishing/templates).
+        - [Read the Submission Details](/bandit/cfp/)
+    - text: Remember to [submit your paper](https://wi-lab.com/cyberchair/2025/bigdata25/scripts/ws_submit.php) before **Sep 14** for the first cycle and to use the [IEEE 2-column format](https://www.ieee.org/conferences/publishing/templates)
       color: warning
       pages_only: true
 
