@@ -25,7 +25,7 @@ main {
 
 /* Top Hero Image */
 .hero-image {
-  background-image: url('/assets/images/splash_2025_macau.jpg'); /* Change to your image path */
+  background-image: url('{{ site.baseurl }}/assets/images/splash_2025_macau.jpg'); /* Change to your image path */
   width: 100vw; /* Full viewport width */
   margin-left: calc(-50vw + 50%); /* Cancel any container centering */
   height: 60vh; /* Adjust height as needed */
