@@ -1,26 +1,26 @@
-title: Conference 2020
-preposition: ''
+title: BANDIT - Workshop on Big data analysis AND Illicit Trends
+preposition: at
 description: >-
-  Conference of a random organization on January 1st in Zurich, Switzerland
+  December 8-11, 2025 @ Macau -- Held with 2025 IEEE International Conference on Big Data (IEEE BigData 2025)
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://example.com" # the base hostname & protocol for your site, e.g. https://example.com
+url: "https://jade-lab.github.io/bandit" # the base hostname & protocol for your site, e.g. https://example.com
+
+# Remote Theme to use
+remote_theme: "DigitaleGesellschaft/jekyll-theme-conference" #alternative "DigitaleGesellschaft/jekyll-theme-conference@v3.6.1"
 
 # Build settings
 markdown: kramdown
 sass:
   style: compressed
 
-# Exclude from processing
+# Additional exclude from processing
 exclude:
+  - vendor
   - .github/
-  - venv/
   - README.md
   - LICENSE.md
   - REDISTRIBUTED.md
-  - screenshot.png
-  - jekyll-theme-conference.gemspec
   - purgecss.config.js
-  - _config.example.yml
 
 # Collections and their defaults
 collections:
@@ -51,22 +51,138 @@ defaults:
     values:
       layout: room
 
-# Theme default values
+
 conference:
+
+  # Language
   lang: en
+
+  # Timezone
+  tz: "+02:00"
+
+  # Show theme errors:
   show_errors: True
 
+  # Navigation bar
+  navigation:
+    logo:
+      name: bandit.25
+      img: 'logo.png'
+      url: '/'
+    breakpoint: md
+    links:
+      - name: Call for Papers
+        relative_url: /cfp/
+      #- name: Program
+      #  relative_url: /program/
+      #- name: Talks
+      #  relative_url: /talks/
+      #- name: Speakers
+      #  relative_url: /speakers/
+      - name: Venue
+        relative_url: /location/
+      - name: Register
+        absolute_url: "https://conferences.cis.um.edu.mo/ieeebigdata2025/"
+      #- name: Previous Editions
+      #  menu:
+      #    - name: 2020 (current)
+      #      disabled: true
+      #    - name: 2019
+      #      relative_url: /2019/
+      #    - name: 2018
+      #      relative_url: /2018/
+
+  # Link Preview for Sharing
   link_preview:
+    # also adapt "preposition" property at top for more meaningful descriptions
     disable: false
+    img:
+      twitter: 'twitter_preview.png'      # inside /assets/images/
+      open_graph: 'facebook_preview.png'  # inside /assets/images/
+
+  # Main landing page
+  main:
+    #logo:
+    #  img: 'splash_2025_macau.jpg'
+    links:
+      - name: Program
+        relative_url: /program/
+      - name: How to get there
+        relative_url: /location/
+      - name: Tickets
+        disabled: true
+        absolute_url: ''
+
+  # Information boxes
+  info_bars:
+    - title: Call for Papers is Open!
+      color: primary
+      main_only: true
+      text: |
+        ---
+        Information:
+        - [Submit a Paper](submit)
+        - [Read the Submission Details](/cfp).
+    - text: Remember to [submit your paper](https://wi-lab.com/cyberchair/2025/bigdata25/scripts/ws_submit.php) before **Sep 14** for the first cycle and to use the [IEEE 2-column format](https://www.ieee.org/conferences/publishing/templates).
+      color: warning
+      pages_only: true
+
+  # Live indications
+  live:
+    date: 01.01.2020
+    timezone: GMT+1
+    stop:       240  # in minutes
+    streaming:
+      enable: true
+      pause:     60  # in minutes
+      prepend:    5  # in minutes
+      extend:     5  # in minutes
+    demo:
+      enable: false
+      duration: 300  # in seconds
+      pause:     10  # in seconds
+
+  talks:
+    # Talk categories
+    main_categories:
+      - name: Cat A
+        color: info
+      - name: Cat B
+        color: success
+
+    # Hide icons on talk overview page
+    hide_icons: false
 
   speakers:
+    # Show first and last name
     show_firstname: true
 
   location:
+    # Disable links to locations
+    hide: false
+    # URL of location / room overview page
     url: '/location'
-    map: true
+    # Main page title shown on location/room navigation bar
+    navbar_title: 'Location'
+    # Show map on location main page.  Set `map: false` if you don't want to
+    # display it.
+    map:
+      # Initial map center point
+      home_coord: 22.129221409221778, 113.5441145173231
+      # Alternative map providers can be found on https://leaflet-extras.github.io/leaflet-providers/preview/
+      # The following do match the Bootstrap design not too badly:
+      #   - Thunderforest.Neighbourhood
+      #   - Esri.WorldTopoMap
+      map_provider: "OpenStreetMap.Mapnik"
+      default_zoom: 15
+
 
   program:
+    # URL of program page
     url: '/program'
-    time_steps: 15
+
+    # Time steps in program table
+    time_steps: 15 # in minutes
+
+    # Show intermediary time steps (next to full hours)
     show_alltimes: true

@@ -4,3 +4,104 @@
 $fa-font-path: '{{ site.baseurl }}/assets/webfonts';
 
 @import 'conference';
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Full-size View */
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 92vh; /* full viewport height */
+}
+
+main {
+  flex: 1; /* take remaining space, push footer down */
+}
+
+/* Top Hero Image */
+.hero-image {
+  background-image: url('/assets/images/splash_2025_macau.jpg'); /* Change to your image path */
+  width: 100vw; /* Full viewport width */
+  margin-left: calc(-50vw + 50%); /* Cancel any container centering */
+  height: 60vh; /* Adjust height as needed */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Lines for parallax */
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+
+  position: relative;
+  margin-top: 0;
+}
+
+.hero-text {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7); /* Optional overlay */
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  max-width: 80%;
+}
+
+/* Footer Banner */
+.sponsor-banner {
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+  padding: 2rem 1rem;
+}
+
+.sponsor-grid {
+  display: grid;
+  grid-template-columns: repeat(3, auto); /* fit to content */
+  gap: 2rem 3rem; /* row gap, column gap */
+  justify-content: center; /* center grid in container */
+  text-align: center;
+  align-items: start;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.sponsor-column h5 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.sponsor-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.sponsor-logos img {
+  max-height: 80px;
+  max-width: 150px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+@media (max-width: 768px) {
+  .sponsor-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sponsor-column {
+    margin-bottom: 2rem;
+  }
+}

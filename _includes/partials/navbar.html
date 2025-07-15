@@ -1,6 +1,17 @@
-<nav class="navbar navbar-expand-{{ site.conference.navigation.breakpoint | default: 'md' }} navbar-light bg-light mb-3">
+<nav class="navbar fixed-top navbar-expand-{{ site.conference.navigation.breakpoint | default: 'md' }} navbar-light bg-light mb-3">
   <div class="container">
 
+    {%- if site.conference.navigation.logo %}
+      <div class="navbar-brand navbar-logo mr-0 ml-1 text-left overflow-hidden">
+        <a href="{{ site.conference.navigation.logo.url }}">
+          {%- if site.conference.navigation.logo.img %}
+            <img src="{{ site.conference.navigation.logo.img | prepend: '/assets/images/' | prepend: site.baseurl }}" class="align-middle" alt="{{ site.conference.navigation.logo.name }}" style="max-height: 50px;"/>
+          {%- else %}
+            {{ site.conference.navigation.logo.name }}
+          {%- endif %}
+        </a>
+      </div>
+    {%- endif %}
     <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -8,7 +19,7 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
+      <ul class="navbar-nav ml-auto">
         {%- for link in site.conference.navigation.links -%}
 
           {%- if link.menu %}
@@ -81,17 +92,56 @@
       </ul>
     </div>
 
-    {%- if site.conference.navigation.logo %}
-      <div class="navbar-brand navbar-logo mr-0 ml-1 text-right overflow-hidden">
-        <a href="{{ site.conference.navigation.logo.url }}">
-          {%- if site.conference.navigation.logo.img %}
-            <img src="{{ site.conference.navigation.logo.img | prepend: '/assets/images/' | prepend: site.baseurl }}" class="align-middle" alt="{{ site.conference.navigation.logo.name }}" />
-          {%- else %}
-            {{ site.conference.navigation.logo.name }}
-          {%- endif %}
-        </a>
-      </div>
-    {%- endif %}
 
   </div>
 </nav>
+
+<script>
+  // Change colour of header and logo
+  window.addEventListener('scroll', function () {
+    const navbar = document.querySelector('.navbar');
+    const logo = document.querySelector('.navbar-logo img');
+
+    if (window.scrollY > 50) {
+      navbar.classList.add('navbar-dark', 'bg-dark');
+      logo.src = '{{ "/assets/images/logo-white.png" | prepend: site.baseurl }}';
+
+    } else {
+      navbar.classList.remove('navbar-dark', 'bg-dark');
+      logo.src = '{{ site.conference.navigation.logo.img | prepend: "/assets/images/" | prepend: site.baseurl }}';
+    }
+  });
+</script>
+
+<script>
+  // Adjust height for fixed-navbar
+  function adjustBodyPadding() {
+    const navbar = document.querySelector('.navbar');
+    if (!navbar) return;
+
+    const navbarHeight = navbar.offsetHeight;
+    document.body.style.paddingTop = navbarHeight + 'px';
+  }
+
+  // Adjust on load and on resize
+  window.addEventListener('load', adjustBodyPadding);
+  window.addEventListener('resize', adjustBodyPadding);
+</script>
+
+<!--
+<script>
+  // Position the notifications below the navbar
+  function positionInfoBarContainer() {
+    const navbar = document.querySelector('.navbar');
+    const infoBarContainer = document.getElementById('info-bar-container');
+
+    if (navbar && infoBarContainer) {
+      const navbarHeight = navbar.offsetHeight;
+      infoBarContainer.style.top = navbarHeight + 'px';
+    }
+  }
+
+  window.addEventListener('load', positionInfoBarContainer);
+  window.addEventListener('resize', positionInfoBarContainer);
+</script>
+-->

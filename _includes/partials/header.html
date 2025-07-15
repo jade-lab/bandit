@@ -47,8 +47,34 @@
         </h1>
       </div>
     {%- endunless -%}
+    
+
+    {%- unless page.url != "/" -%}
+      <!-- Show the introduction banner: -->
+      <div class="container-fluid p-0">
+        <div class="hero-image">
+          <div class="hero-text">
+            <h1>Welcome to {{ site.title }}</h1>
+            {% if site.description != none %}
+              <p class="lead">
+                {{ site.description | markdownify | replace: '<p>', '<p class="lead">' }}
+              </p>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    {%- endunless -%}
 
   </header>
+  <div class="page-wrapper">
+
   <main class="container">
 
-    {%- include partials/info_bar.html -%}
+    <div class="fixed-bottom w-100 d-flex justify-content-end px-3" id="info-bar-container" style="z-index: 1040;">
+      <div class="alerts-container d-flex flex-column align-items-end">
+        {%- include partials/info_bar.html -%}
+      </div>
+    </div>
+
+    <br>
+<!--    {%- include partials/info_bar.html -%}-->
