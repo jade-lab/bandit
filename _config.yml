@@ -2,8 +2,8 @@ title: BANDIT - Workshop on Big data analysis AND Illicit Trends
 preposition: at
 description: >-
   December 8-11, 2025 @ Macau -- Held with 2025 IEEE International Conference on Big Data (IEEE BigData 2025)
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://jade-lab.github.io/bandit" # the base hostname & protocol for your site, e.g. https://example.com
+baseurl: "/bandit" # the subpath of your site, e.g. /blog
+url: "https://jade-lab.github.io" # the base hostname & protocol for your site, e.g. https://example.com
 
 # Remote Theme to use
 remote_theme: "DigitaleGesellschaft/jekyll-theme-conference" #alternative "DigitaleGesellschaft/jekyll-theme-conference@v3.6.1"
