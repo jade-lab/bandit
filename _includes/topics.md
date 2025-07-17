@@ -19,7 +19,7 @@ The topics of interest related to the workshop include, but are not limited to:
 -   Explainable AI in Support of Criminal Investigations and Prosecution
 -   Social Media Privacy and Security
 -   Societal Impact of Cybercriminal Behaviour
--   Trend Analysis of Drugs and NPS
+-   Trend Analysis of Drugs and New Psychoactive Substances (NPS)
 
 ###### Misinformation & Online Influence
 -   Analysis of the Role and the Impact of Misinformation in Online Platforms 

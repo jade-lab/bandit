@@ -3,7 +3,7 @@ layout: page
 title: Call for Papers
 ---
 
-## Workshop on Big Data Analysis and Illicit Trends - b&it (BANDIT)
+## IEEE Workshop on Big Data Analysis and Illicit Trends - b&it (BANDIT)
 IEEE Big Data 2025 | December 8–11, 2025 | Macau, China (Hybrid)
 
 <br>
