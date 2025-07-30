@@ -168,13 +168,13 @@ conference:
     # display it.
     map:
       # Initial map center point
-      home_coord: 22.129221409221778, 113.5441145173231
+      home_coord: 22.144599172900257, 113.5567684330153
       # Alternative map providers can be found on https://leaflet-extras.github.io/leaflet-providers/preview/
       # The following do match the Bootstrap design not too badly:
       #   - Thunderforest.Neighbourhood
       #   - Esri.WorldTopoMap
       map_provider: "OpenStreetMap.Mapnik"
-      default_zoom: 15
+      default_zoom: 18
 
 
   program:
