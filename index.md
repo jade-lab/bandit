@@ -53,5 +53,6 @@ The workshop will be held in conjunction with [IEEE Big Data 2025](https://confe
 -	João Gondim - University of Brasilia (UnB)
 -	Michele Campobasso - Forescout (Vedere Labs)
 -	Robson de Albuquerque - University of Brasilia (UnB)
+-	Stash Kempinski - Bureau Veritas Cybersecurity, Eindhoven University of Technology (TU/e)
 -	Willem-Jan v.d Heuvel - Tilburg University (TiU)
 
