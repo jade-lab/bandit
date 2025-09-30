@@ -1,8 +1,8 @@
 #### Important Dates
 Consider 23:59 Anywhere on Earth (AoE) for every date below:
 
-- Submission (Cycle 1): ~~Sep 14, 2025~~ **Sep 28, 2025**
-- Notification of  Acceptance (Cycle 1): ~~Oct 05, 2025~~ **Oct 12, 2025** 
+- Submission (Cycle 1): ~~Sep 14, 2025~~ Sep 28, 2025 (closed)
+- Notification of  Acceptance (Cycle 1): ~~Oct 05, 2025~~ Oct 12, 2025 
 
 - Submission (Cycle 2): **Oct 26, 2025**
 - Notification of Acceptance (Cycle 2): **Nov 16, 2025**
