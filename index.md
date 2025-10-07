@@ -50,6 +50,7 @@ The workshop will be held in conjunction with [IEEE Big Data 2025](https://confe
 #### Steering Committee
 -	Ana Isabel Barros - Dutch Organisation for Applied Scientific Research (TNO), Tilburg University (TiU)
 -	Damian Tamburri - Università del Sannio, Tilburg University (TiU), NXP
+-	George Manias - Tilburg University (TiU)
 -	João Gondim - University of Brasilia (UnB)
 -	Michele Campobasso - Forescout (Vedere Labs)
 -	Robson de Albuquerque - University of Brasilia (UnB)
