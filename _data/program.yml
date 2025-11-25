@@ -1,25 +1,41 @@
 days:
-- name: Monday
-  abbr: Mo
-  date: 2020-01-31
+- name: '14:00-15:25'
+  abbr: B1
+  date: 2025-12-08
   rooms:
-  - name: Room A
+  - name: Room 8
     talks:
-      - name: Vim Impetus Placerat Cotidieque Ad
-        time_start: '12:00'
-        time_end: '12:45'
-      - name: Condimentum Vitae Sapien Pellentesque
-        time_start: '12:45'
-        time_end: '13:30'
-
-  - name: Room B
+      - name: Opening Remarks
+        time_start: '14:00'
+        time_end: '14:10'
+      - name: Measuring Onion Website Discovery and Tor Users Interests with Honeypots
+        time_start: '14:10'
+        time_end: '14:35'
+      - name: 'Uncovering the Darknet: A Hybrid Intelligence Framework for Drug Market Surveillance'
+        time_start: '14:35'
+        time_end: '15:00'
+      - name: An Empirical Investigation of Ransomware Encryption Techniques and Forensic Evidence Availability
+        time_start: '15:00'
+        time_end: '15:25'
+        
+- name: '15:55-17:30'
+  abbr: B2
+  date: 2025-12-08
+  rooms:
+  - name: Room 8
     talks:
-      - name: Arcu Non Odio
-        time_start: '12:00'
-        time_end: '13:00'
-
-  - name: Room C
-    talks:
-      - name: Eu Nisl Nunc Mi Ipsum Faucibus
-        time_start: '13:30'
-        time_end: '14:30'
+      - name: 'Operationalizing Structured Direction and Planning for Cyber Threat Intelligence: A Practical Implementation for the Brazilian Financial System'
+        time_start: '15:55'
+        time_end: '16:15'
+      - name: 'Design and Implementation of a Multi-Agent Threat Intelligence Assistant based on Generative AI'
+        time_start: '16:15'
+        time_end: '16:35'
+      - name: 'Scam Shield: Multi-Model Voting and Fine-Tuned LLMs Against Adversarial Attacks'
+        time_start: '16:35'
+        time_end: '17:00'
+      - name: 'Keynote (More details soon)'
+        time_start: '17:00'
+        time_end: '17:25'
+      - name: Closing Remarks
+        time_start: '17:25'
+        time_end: '17:30'

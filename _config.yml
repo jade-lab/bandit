@@ -71,12 +71,12 @@ conference:
       url: '/bandit/'
     breakpoint: md
     links:
-      - name: Call for Papers
+      - name: CFP
         relative_url: /cfp/
-      #- name: Program
-      #  relative_url: /program/
-      #- name: Talks
-      #  relative_url: /talks/
+      - name: Program
+        relative_url: /program/
+      - name: Accepted Papers
+        relative_url: /talks/
       #- name: Speakers
       #  relative_url: /speakers/
       - name: Venue
@@ -115,24 +115,24 @@ conference:
 
   # Information boxes
   info_bars:
-    - title: Call for Papers is Open!
+    - title: List of Accepted Papers available now!
       color: primary
       main_only: true
       text: |
         ---
-        **2nd Cycle Submission Deadline: Nov 02**
+        **Check the Programme and the Accepted Papers below:**
 
-        Information:
-        - [Submit a Paper](https://wi-lab.com/cyberchair/2025/bigdata25/scripts/ws_submit.php)
-        - [Read the Submission Details](/bandit/cfp/)
-    - text: Remember to [submit your paper](https://wi-lab.com/cyberchair/2025/bigdata25/scripts/ws_submit.php) before **Nov 02** for the **second cycle** and to use the [IEEE 2-column format](https://www.ieee.org/conferences/publishing/templates)
-      color: warning
-      pages_only: true
+        Links:
+        - [Workshop Programme](/bandit/program/)
+        - [Accepted Papers](/bandit/talks/)
+    # - text: Remember to [submit your paper](https://wi-lab.com/cyberchair/2025/bigdata25/scripts/ws_submit.php) before **Nov 02** for the **second cycle** and to use the [IEEE 2-column format](https://www.ieee.org/conferences/publishing/templates)
+    #   color: warning
+    #   pages_only: true
 
   # Live indications
   live:
-    date: 01.01.2020
-    timezone: GMT+1
+    date: 08.12.2025
+    timezone: GMT+8
     stop:       240  # in minutes
     streaming:
       enable: true
@@ -147,10 +147,19 @@ conference:
   talks:
     # Talk categories
     main_categories:
-      - name: Cat A
+      - name: Full Papers
         color: info
-      - name: Cat B
+      - name: Short Papers
         color: success
+      - name: Keynote
+        color:  dark
+  # - `secondary` (your website's secondary color, normally grey)
+  # - `success` (green)
+  # - `alert` (red)
+  # - `warning` (yellow)
+  # - `info` (blue)
+  # - `light` (white)
+  # - `dark` (dark grey)
 
     # Hide icons on talk overview page
     hide_icons: false
@@ -184,7 +193,7 @@ conference:
     url: '/program'
 
     # Time steps in program table
-    time_steps: 15 # in minutes
+    time_steps: 5 # in minutes
 
     # Show intermediary time steps (next to full hours)
     show_alltimes: true

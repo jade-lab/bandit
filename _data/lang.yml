@@ -8,7 +8,7 @@ en:
     for: for
     in: in
     on_: "on"
-  overview: Overview
+  overview: Accepted Papers
   more_information: More Information
   live:
     live: Live
@@ -44,8 +44,8 @@ en:
     title: Speaker
     talks: Talks at this conference
   talk:
-    overview: Talks
-    title: Talk
+    overview: Accepted Papers
+    title: Paper
 
 de:
   pronoun:
