@@ -33,7 +33,7 @@ days:
       - name: 'Scam Shield: Multi-Model Voting and Fine-Tuned LLMs Against Adversarial Attacks'
         time_start: '16:35'
         time_end: '17:00'
-      - name: 'Keynote'
+      - name: Keynote
         time_start: '17:00'
         time_end: '17:25'
       - name: Closing Remarks
