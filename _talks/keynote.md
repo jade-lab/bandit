@@ -1,7 +1,7 @@
 ---
-name: Keynote
+name: Keynote Talk
 speakers:
-  - dr. Michele Campobasso
+  - Michele Campobasso
 categories:
   - Keynote
 ---

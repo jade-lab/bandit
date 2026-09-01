@@ -6,7 +6,11 @@ baseurl: "/bandit" # the subpath of your site, e.g. /blog
 url: "https://jade-lab.github.io" # the base hostname & protocol for your site, e.g. https://example.com
 
 # Remote Theme to use
-remote_theme: "DigitaleGesellschaft/jekyll-theme-conference" #alternative "DigitaleGesellschaft/jekyll-theme-conference@v3.6.1"
+remote_theme: "DigitaleGesellschaft/jekyll-theme-conference@v3.6.1" #alternative "DigitaleGesellschaft/jekyll-theme-conference@v3.6.1"
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
 
 # Build settings
 markdown: kramdown
@@ -83,14 +87,12 @@ conference:
         relative_url: /location/
       - name: Register
         absolute_url: "https://conferences.cis.um.edu.mo/ieeebigdata2025/"
-      #- name: Previous Editions
-      #  menu:
-      #    - name: 2020 (current)
-      #      disabled: true
-      #    - name: 2019
-      #      relative_url: /2019/
-      #    - name: 2018
-      #      relative_url: /2018/
+      - name: "More"
+        disable: true
+        relative_url: false
+        menu:
+          - name: Previous Editions
+            relative_url: /editions/
 
   # Link Preview for Sharing
   link_preview:

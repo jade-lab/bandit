@@ -1,6 +1,6 @@
 ---
-name: dr. Michele Campobasso
-first_name: dr. Michele
-last_name: Campobasso (Forescout)
+name: Michele Campobasso
+first_name: Michele
+last_name: Campobasso
 hide: true
 ---
