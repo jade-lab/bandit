@@ -2,7 +2,7 @@ title: BANDIT - Workshop on Big data analysis AND Illicit Trends
 preposition: at
 description: >-
   December 8-11, 2025 @ Macau -- Held with 2025 IEEE International Conference on Big Data (IEEE BigData 2025)
-baseurl: "/bandit/" # the subpath of your site, e.g. /blog
+baseurl: "/bandit/editions/2025" # the subpath of your site, e.g. /blog
 url: "https://jade-lab.github.io" # the base hostname & protocol for your site, e.g. https://example.com
 
 # Remote Theme to use
@@ -92,7 +92,7 @@ conference:
         relative_url: false
         menu:
           - name: Previous Editions
-            relative_url: /editions/
+            absolute_url: /editions/
 
   # Link Preview for Sharing
   link_preview:
@@ -117,12 +117,12 @@ conference:
 
   # Information boxes
   info_bars:
-    # - title: Archived page!
-    #   color: warning
-    #   main_only: false
-    #   text: |
-    #     You are looking at an archived page of the 2025 edition.
-    #     Got to [current edition](/bandit/).
+    - title: Archived page!
+      color: warning
+      main_only: false
+      text: |
+        You are looking at an archived page of the 2025 edition.
+        Got to [current edition](/bandit/).
     
     # - title: List of Accepted Papers available now!
     #   color: primary
