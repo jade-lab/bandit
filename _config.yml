@@ -2,7 +2,7 @@ title: BANDIT - Workshop on Big data analysis AND Illicit Trends
 preposition: at
 description: >-
   December 8-11, 2025 @ Macau -- Held with 2025 IEEE International Conference on Big Data (IEEE BigData 2025)
-baseurl: "/bandit" # the subpath of your site, e.g. /blog
+baseurl: "/bandit/" # the subpath of your site, e.g. /blog
 url: "https://jade-lab.github.io" # the base hostname & protocol for your site, e.g. https://example.com
 
 # Remote Theme to use
@@ -117,16 +117,23 @@ conference:
 
   # Information boxes
   info_bars:
-    - title: List of Accepted Papers available now!
-      color: primary
-      main_only: true
-      text: |
-        ---
-        **Check the Programme and the Accepted Papers below:**
+    # - title: Archived page!
+    #   color: warning
+    #   main_only: false
+    #   text: |
+    #     You are looking at an archived page of the 2025 edition.
+    #     Got to [current edition](/bandit/).
+    
+    # - title: List of Accepted Papers available now!
+    #   color: primary
+    #   main_only: true
+    #   text: |
+    #     ---
+    #     **Check the Programme and the Accepted Papers below:**
 
-        Links:
-        - [Workshop Programme](/bandit/program/)
-        - [Accepted Papers](/bandit/talks/)
+    #     Links:
+    #     - [Workshop Programme](/bandit/program/)
+    #     - [Accepted Papers](/bandit/talks/)
     # - text: Remember to [submit your paper](https://wi-lab.com/cyberchair/2025/bigdata25/scripts/ws_submit.php) before **Nov 02** for the **second cycle** and to use the [IEEE 2-column format](https://www.ieee.org/conferences/publishing/templates)
     #   color: warning
     #   pages_only: true

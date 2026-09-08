@@ -1,3 +1,40 @@
+# Adding a new year
+Change `baseurl` in `config.yml` to the year you want:
+```
+baseurl: "/bandit/editions/2025"
+```
+Uncomment this warning (and add the year):
+```
+  info_bars:
+    - title: Archived page!
+      color: warning
+      main_only: false
+      text: |
+        You are looking at an archived page of the 2025 edition.
+        Got to [current edition](/bandit/).
+```
+
+Build it locally (Linux):
+```
+JEKYLL_ENV=production bundle exec jekyll build
+```
+
+Windows:
+```
+$env:JEKYLL_ENV="production"; bundle exec jekyll build
+```
+
+Copy the build to the new year folder:
+```
+mkdir -p editions/2025
+cp -r _site/* editions/2025/
+```
+
+Rename it back (and comment the warning again)
+```
+baseurl: "/bandit/"
+```
+
 # jekyll-theme-conference
 
 ![Screenshot](screenshot.png)

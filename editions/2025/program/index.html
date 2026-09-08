@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Program - BANDIT - Workshop on Big data analysis AND Illicit Trends</title>
+  <meta name="description" content="December 8-11, 2025 @ Macau -- Held with 2025 IEEE International Conference on Big Data (IEEE BigData 2025)" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="https://jade-lab.github.io/bandit/editions/2025/assets/images/twitter_preview.png" />
+  <meta name="twitter:title" content="Program" />
+  <meta name="twitter:description" content="December 8-11, 2025 @ Macau -- Held with 2025 IEEE International Conference on Big Data (IEEE BigData 2025)" />
+
+  <meta property="og:site_name" content="BANDIT - Workshop on Big data analysis AND Illicit Trends" />
+  <meta property="og:image" content="https://jade-lab.github.io/bandit/editions/2025/assets/images/facebook_preview.png" />
+  <meta property="og:url" content="https://jade-lab.github.io/bandit/editions/2025/program/" />
+  <meta property="og:title" content="Program" />
+  <meta property="og:description" content="December 8-11, 2025 @ Macau -- Held with 2025 IEEE International Conference on Big Data (IEEE BigData 2025)" />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="/bandit/editions/2025/assets/css/main.css?t=1788883396" />
+
+  <link rel="preload" as="font" href="/bandit/editions/2025/assets/webfonts/fa-regular-400.woff2" type="font/woff2" crossorigin="anonymous" />
+  <link rel="preload" as="font" href="/bandit/editions/2025/assets/webfonts/fa-solid-900.woff2" type="font/woff2" crossorigin="anonymous" />
+  <link rel="prefetch" as="image" href="/bandit/editions/2025/assets/icons/live.svg" type="image/svg+xml" crossorigin="anonymous" />
+  <link rel="prefetch" as="fetch" href="/bandit/editions/2025/assets/js/data.json" type="application/json" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://github.com" />
+</head>
+
+<body class="pb-4">
+  <header>
+    <!-- navigation bar (web only): --><nav class="navbar fixed-top navbar-expand-md navbar-light bg-light mb-3">
+  <div class="container">
+      <div class="navbar-brand navbar-logo mr-0 ml-1 text-left overflow-hidden">
+        <a href="/bandit/">
+            <img src="/bandit/editions/2025/assets/images/logo.png" class="align-middle" alt="bandit.25" style="max-height: 50px;"/>
+        </a>
+      </div>
+    <a class="navbar-brand" href="/bandit/editions/2025/">BANDIT - Workshop on Big data analysis AND Illicit Trends</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+            <li class="nav-item "><a class="nav-link" href="/bandit/editions/2025/cfp/" title="CFP">
+                CFP
+              </a>
+            </li>
+            <li class="nav-item active"><a class="nav-link" href="/bandit/editions/2025/program/" title="Program">
+                Program
+              </a>
+            </li>
+            <li class="nav-item "><a class="nav-link" href="/bandit/editions/2025/talks/" title="Accepted Papers">
+                Accepted Papers
+              </a>
+            </li>
+            <li class="nav-item "><a class="nav-link" href="/bandit/editions/2025/location/" title="Venue">
+                Venue
+              </a>
+            </li>
+            <li class="nav-item "><a class="nav-link" href="https://conferences.cis.um.edu.mo/ieeebigdata2025/" title="Register">
+                Register
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbar-dropdown5" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                More
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbar-dropdown5">
+                  <a class="dropdown-item" href="/bandit/editions/2025/editions/" title="Previous Editions">
+                    Previous Editions
+                  </a>
+              </div>
+            </li>
+      </ul>
+    </div>
+
+
+  </div>
+</nav>
+
+<script>
+  // Change colour of header and logo
+  window.addEventListener('scroll', function () {
+    const navbar = document.querySelector('.navbar');
+    const logo = document.querySelector('.navbar-logo img');
+
+    if (window.scrollY > 50) {
+      navbar.classList.add('navbar-dark', 'bg-dark');
+      logo.src = '/bandit/editions/2025/assets/images/logo-white.png';
+
+    } else {
+      navbar.classList.remove('navbar-dark', 'bg-dark');
+      logo.src = '/bandit/editions/2025/assets/images/logo.png';
+    }
+  });
+</script>
+
+<script>
+  // Adjust height for fixed-navbar
+  function adjustBodyPadding() {
+    const navbar = document.querySelector('.navbar');
+    if (!navbar) return;
+
+    const navbarHeight = navbar.offsetHeight;
+    document.body.style.paddingTop = navbarHeight + 'px';
+  }
+
+  // Adjust on load and on resize
+  window.addEventListener('load', adjustBodyPadding);
+  window.addEventListener('resize', adjustBodyPadding);
+</script>
+
+<!--
+<script>
+  // Position the notifications below the navbar
+  function positionInfoBarContainer() {
+    const navbar = document.querySelector('.navbar');
+    const infoBarContainer = document.getElementById('info-bar-container');
+
+    if (navbar && infoBarContainer) {
+      const navbarHeight = navbar.offsetHeight;
+      infoBarContainer.style.top = navbarHeight + 'px';
+    }
+  }
+
+  window.addEventListener('load', positionInfoBarContainer);
+  window.addEventListener('resize', positionInfoBarContainer);
+</script>
+--><!-- site title (print only): -->
+      <div class="container d-none d-print-block mt-4 mb-4">
+        <h1 class="display-4">
+          BANDIT - Workshop on Big data analysis AND Illicit Trends
+        </h1>
+      </div></header>
+  <div class="page-wrapper">
+
+  <main class="container">
+
+    <div class="fixed-bottom w-100 d-flex justify-content-end px-3" id="info-bar-container" style="z-index: 1040;">
+      <div class="alerts-container d-flex flex-column align-items-end">
+      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+          <h4 class="alert-heading">Archived page!</h4>
+
+        <p>You are looking at an archived page of the 2025 edition.
+Got to <a href="/bandit/">current edition</a>.</p>
+
+
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div></div>
+    </div>
+
+    <br>
+<!--
+      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+          <h4 class="alert-heading">Archived page!</h4>
+
+        <p>You are looking at an archived page of the 2025 edition.
+Got to <a href="/bandit/">current edition</a>.</p>
+
+
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>-->
+
+  <h1 class="display-5 mb-2 text-break">Program</h1>
+
+  <p><br /></p>
+
+<p>Please, consider Macau Time zone <strong>(GMT+8)</strong></p>
+<ul>
+  <li>Short Papers: 15min presentation + 5min questions</li>
+  <li>Full Papers: 20min presentation + 5min questions</li>
+</ul>
+
+    <h5 class="mt-4">Caption</h5>
+        <div class="d-block d-sm-inline-block m-1 p-1 pl-2 pr-2 border-soft-info bg-soft-info font-weight-normal">Full Papers</div>
+        <div class="d-block d-sm-inline-block m-1 p-1 pl-2 pr-2 border-soft-success bg-soft-success font-weight-normal">Short Papers</div>
+        <div class="d-block d-sm-inline-block m-1 p-1 pl-2 pr-2 border-soft-dark bg-soft-dark font-weight-normal">Keynote</div>
+    <ul class="nav justify-content-center mb-3 btn-group" id="day-list" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a class="nav-link btn btn-outline-secondary active" id="tab-b1" data-toggle="tab" data-ts="1765144800" href="#b1" role="tab" aria-controls="b1" aria-selected="true">14:00-15:25</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link btn btn-outline-secondary" id="tab-b2" data-toggle="tab" data-ts="1765144800" href="#b2" role="tab" aria-controls="b2" aria-selected="false">15:55-17:30</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="day-content">
+      <div class="tab-pane active" id="b1" role="tabpanel" aria-labelledby="tab-b1">
+
+    <div class="sticky-top syncscroll overflow-hidden" name="sync-table">
+      <table class="table mb-0 mx-auto">
+        <thead>
+          <tr>
+            <th scope="col" class="col-title text-right">#<span class="invisible">I0</span></th>
+            <th class="col-space p-0" scope="col"></th>
+              <th scope="col" class="text-center"><a class="text-reset" href="/bandit/editions/2025/rooms/room/">Room 8</a></th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+
+    <div class="syncscroll overflow-y-hidden" name="sync-table">
+      <table class="table mx-auto">
+        <tbody><!--
+          The shadow of a previous program block should be above a later program block, thus
+          the earlier a program block the higher its z-index (opposite to the actual rendering).
+
+          Bootstrap uses as lowest z-index for its overlapping elements a z-index of 1000 (for
+          $zindex-dropdown).
+          --><tr><th scope="row" class="col-title text-right" style="z-index: 999">14:00</th>
+              <td class="col-space p-0"></td><td rowspan="2" class="alert alert- shadow-sm overflow-hidden" style="z-index: 998"><a title="" data-toggle="modal" data-target="#stream-modal" data-room="Room 8" href="#" class="live-show live-button badge badge-dark font-weight-normal text-center d-none mb-2" data-start="1765195200" data-end="1765195800">
+    <object data="/bandit/editions/2025/assets/icons/live.svg" type="image/svg+xml">!</object>
+    Live</a>
+
+                      <p class="mb-2">Opening Remarks
+                      </p>
+                      <p class="font-weight-light mb-2"><a class="text-reset" href="/bandit/editions/2025"> </a>
+                      </p>
+                      <p class="mb-1">
+                      </p>
+                    </td>
+
+            </tr><tr><th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">
+                  :5
+                </th>
+              <td class="col-space p-0"></td>
+
+            </tr><tr><th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">
+                  :10
+                </th>
+              <td class="col-space p-0"></td><td rowspan="5" class="alert alert-info shadow-sm overflow-hidden" style="z-index: 996"><a title="" data-toggle="modal" data-target="#stream-modal" data-room="Room 8" href="#" class="live-show live-button badge badge-dark font-weight-normal text-center d-none mb-2" data-start="1765195800" data-end="1765197300">
+    <object data="/bandit/editions/2025/assets/icons/live.svg" type="image/svg+xml">!</object>
+    Live</a>
+
+                      <p class="mb-2"><a class="text-reset" href="/bandit/editions/2025/talks/talk1/">Measuring Onion Website Discovery and Tor Users Interests with Honeypots</a>
+                      </p>
+                      <p class="font-weight-light mb-2">Arttu Paju, Waris Abdullah, and Juha Nurmi
+                      </p>
+                      <p class="mb-1"><span class="badge badge-light text-reset font-weight-normal">Full Paper</span>&nbsp;
+                      </p>
+                    </td>
+
+            </tr><tr><th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">
+                  :15
+                </th>
+              <td class="col-space p-0"></td>
+
+            </tr><tr><th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">
+                  :20
+                </th>
+              <td class="col-space p-0"></td>
+
+            </tr><tr><th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">
+                  :25
+                </th>
+              <td class="col-space p-0"></td>
+
+            </tr><tr><th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">
+                  :30
+                </th>
+              <td class="col-space p-0"></td>
+
+            </tr><tr><th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">
+                  :35
+                </th>
+              <td class="col-space p-0"></td><td rowspan="5" class="alert alert-info shadow-sm overflow-hidden" style="z-index: 991"><a title="" data-toggle="modal" data-target="#stream-modal" data-room="Room 8" href="#" class="live-show live-button badge badge-dark font-weight-normal text-center d-none mb-2" data-start="1765197300" data-end="1765198800">
+    <object data="/bandit/editions/2025/assets/icons/live.svg" type="image/svg+xml">!</object>
+    Live</a>
+
+                      <p class="mb-2"><a class="text-reset" href="/bandit/editions/2025/talks/talk2/">Uncovering the Darknet: A Hybrid Intelligence Framework for Drug Market Surveillance</a>
+                      </p>
+                      <p class="font-weight-light mb-2">Diogo Rio, Krishna Teja Atluri, Giuseppe Cascavilla, and Jessica De Pascale
+                      </p>
+                      <p class="mb-1"><span class="badge badge-light text-reset font-weight-normal">Full Paper</span>&nbsp;
+                      </p>
+                    </td>
+
+            </tr><tr><th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">
+                  :40
+                </th>
+              <td class="col-space p-0"></td>
+
+            </tr><tr><th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">
+                  :45
+                </th>
+              <td class="col-space p-0"></td>
+
+            </tr><tr><th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">
+                  :50
+                </th>
+              <td class="col-space p-0"></td>
+
+            </tr><tr><th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">
+                  :55
+                </th>
+              <td class="col-space p-0"></td>
+
+            </tr><tr><th scope="row" class="col-title text-right" style="z-index: 999">15:00</th>
+              <td class="col-space p-0"></td><td rowspan="5" class="alert alert-info shadow-sm overflow-hidden" style="z-index: 986"><a title="" data-toggle="modal" data-target="#stream-modal" data-room="Room 8" href="#" class="live-show live-button badge badge-dark font-weight-normal text-center d-none mb-2" data-start="1765198800" data-end="1765200300">
+    <object data="/bandit/editions/2025/assets/icons/live.svg" type="image/svg+xml">!</object>
+    Live</a>
+
+                      <p class="mb-2"><a class="text-reset" href="/bandit/editions/2025/talks/talk3/">An Empirical Investigation of Ransomware Encryption Techniques and Forensic Evidence Availability</a>
+                      </p>
+                      <p class="font-weight-light mb-2">Tjielke Nabuurs, Cristoffer Leite, Indika Kumara, Roya Nasiri, Matthijs Vos, and Justin Hende
+                      </p>
+                      <p class="mb-1"><span class="badge badge-light text-reset font-weight-normal">Full Paper</span>&nbsp;
+                      </p>
+                    </td>
+
+            </tr><tr><th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">
+                  :5
+                </th>
+              <td class="col-space p-0"></td>
+
+            </tr><tr><th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">
+                  :10
+                </th>
+              <td class="col-space p-0"></td>
+
+            </tr><tr><th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">
+                  :15
+                </th>
+              <td class="col-space p-0"></td>
+
+            </tr><tr><th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">
+                  :20
+                </th>
+              <td class="col-space p-0"></td>
+
+            </tr>
+        </tbody>
+      </table>
+    </div>
+      </div>
+      <div class="tab-pane" id="b2" role="tabpanel" aria-labelledby="tab-b2">
+
+    <div class="sticky-top syncscroll overflow-hidden" name="sync-table">
+      <table class="table mb-0 mx-auto">
+        <thead>
+          <tr>
+            <th scope="col" class="col-title text-right">#<span class="invisible">I0</span></th>
+            <th class="col-space p-0" scope="col"></th>
+              <th scope="col" class="text-center"><a class="text-reset" href="/bandit/editions/2025/rooms/room/">Room 8</a></th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+
+    <div class="syncscroll overflow-y-hidden" name="sync-table">
+      <table class="table mx-auto">
+        <tbody><!--
+          The shadow of a previous program block should be above a later program block, thus
+          the earlier a program block the higher its z-index (opposite to the actual rendering).
+
+          Bootstrap uses as lowest z-index for its overlapping elements a z-index of 1000 (for
+          $zindex-dropdown).
+          --><tr><th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">
+                  :55
+                </th>
+              <td class="col-space p-0"></td><td rowspan="4" class="alert alert-success shadow-sm overflow-hidden" style="z-index: 998"><a title="" data-toggle="modal" data-target="#stream-modal" data-room="Room 8" href="#" class="live-show live-button badge badge-dark font-weight-normal text-center d-none mb-2" data-start="1765202100" data-end="1765203300">
+    <object data="/bandit/editions/2025/assets/icons/live.svg" type="image/svg+xml">!</object>
+    Live</a>
+
+                      <p class="mb-2"><a class="text-reset" href="/bandit/editions/2025/talks/talk4/">Operationalizing Structured Direction and Planning for Cyber Threat Intelligence: A Practical Implementation for the Brazilian Financial System</a>
+                      </p>
+                      <p class="font-weight-light mb-2">Pedro Gontijo, Robson Albuquerque, and João Gondim
+                      </p>
+                      <p class="mb-1"><span class="badge badge-light text-reset font-weight-normal">Short Paper</span>&nbsp;
+                      </p>
+                    </td>
+
+            </tr><tr><th scope="row" class="col-title text-right" style="z-index: 999">16:00</th>
+              <td class="col-space p-0"></td>
+
+            </tr><tr><th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">
+                  :5
+                </th>
+              <td class="col-space p-0"></td>
+
+            </tr><tr><th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">
+                  :10
+                </th>
+              <td class="col-space p-0"></td>
+
+            </tr><tr><th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">
+                  :15
+                </th>
+              <td class="col-space p-0"></td><td rowspan="4" class="alert alert-success shadow-sm overflow-hidden" style="z-index: 994"><a title="" data-toggle="modal" data-target="#stream-modal" data-room="Room 8" href="#" class="live-show live-button badge badge-dark font-weight-normal text-center d-none mb-2" data-start="1765203300" data-end="1765204500">
+    <object data="/bandit/editions/2025/assets/icons/live.svg" type="image/svg+xml">!</object>
+    Live</a>
+
+                      <p class="mb-2"><a class="text-reset" href="/bandit/editions/2025/talks/talk5/">Design and Implementation of a Multi-Agent Threat Intelligence Assistant based on Generative AI</a>
+                      </p>
+                      <p class="font-weight-light mb-2">Francesco Saccone, Alessandro Manzi, Andrea Di Sorbo, Elisa Costante, and Corrado Aaron Visaggio
+                      </p>
+                      <p class="mb-1"><span class="badge badge-light text-reset font-weight-normal">Short Paper</span>&nbsp;
+                      </p>
+                    </td>
+
+            </tr><tr><th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">
+                  :20
+                </th>
+              <td class="col-space p-0"></td>
+
+            </tr><tr><th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">
+                  :25
+                </th>
+              <td class="col-space p-0"></td>
+
+            </tr><tr><th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">
+                  :30
+                </th>
+              <td class="col-space p-0"></td>
+
+            </tr><tr><th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">
+                  :35
+                </th>
+              <td class="col-space p-0"></td><td rowspan="5" class="alert alert-info shadow-sm overflow-hidden" style="z-index: 990"><a title="" data-toggle="modal" data-target="#stream-modal" data-room="Room 8" href="#" class="live-show live-button badge badge-dark font-weight-normal text-center d-none mb-2" data-start="1765204500" data-end="1765206000">
+    <object data="/bandit/editions/2025/assets/icons/live.svg" type="image/svg+xml">!</object>
+    Live</a>
+
+                      <p class="mb-2"><a class="text-reset" href="/bandit/editions/2025/talks/talk6/">Scam Shield: Multi-Model Voting and Fine-Tuned LLMs Against Adversarial Attacks</a>
+                      </p>
+                      <p class="font-weight-light mb-2">Chen-Wei Chang, Shailik Sarkar, Hossein Salemi, Hyungmin Kim, Shutonu Mitra, Hemant Purohit, Fengxiu Zhang, Michin Hong, Jin-Hee Cho, and Chang-Tien Lu
+                      </p>
+                      <p class="mb-1"><span class="badge badge-light text-reset font-weight-normal">Full Paper</span>&nbsp;
+                      </p>
+                    </td>
+
+            </tr><tr><th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">
+                  :40
+                </th>
+              <td class="col-space p-0"></td>
+
+            </tr><tr><th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">
+                  :45
+                </th>
+              <td class="col-space p-0"></td>
+
+            </tr><tr><th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">
+                  :50
+                </th>
+              <td class="col-space p-0"></td>
+
+            </tr><tr><th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">
+                  :55
+                </th>
+              <td class="col-space p-0"></td>
+
+            </tr><tr><th scope="row" class="col-title text-right" style="z-index: 999">17:00</th>
+              <td class="col-space p-0"></td><td rowspan="5" class="alert alert-dark shadow-sm overflow-hidden" style="z-index: 985"><a title="" data-toggle="modal" data-target="#stream-modal" data-room="Room 8" href="#" class="live-show live-button badge badge-dark font-weight-normal text-center d-none mb-2" data-start="1765206000" data-end="1765207500">
+    <object data="/bandit/editions/2025/assets/icons/live.svg" type="image/svg+xml">!</object>
+    Live</a>
+
+                      <p class="mb-2"><a class="text-reset" href="/bandit/editions/2025/talks/keynote/">Keynote Talk</a>
+                      </p>
+                      <p class="font-weight-light mb-2">Michele Campobasso
+                      </p>
+                      <p class="mb-1">
+                      </p>
+                    </td>
+
+            </tr><tr><th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">
+                  :5
+                </th>
+              <td class="col-space p-0"></td>
+
+            </tr><tr><th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">
+                  :10
+                </th>
+              <td class="col-space p-0"></td>
+
+            </tr><tr><th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">
+                  :15
+                </th>
+              <td class="col-space p-0"></td>
+
+            </tr><tr><th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">
+                  :20
+                </th>
+              <td class="col-space p-0"></td>
+
+            </tr><tr><th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: 999">
+                  :25
+                </th>
+              <td class="col-space p-0"></td><td rowspan="1" class="alert alert-dark shadow-sm overflow-hidden" style="z-index: 980"><a title="" data-toggle="modal" data-target="#stream-modal" data-room="Room 8" href="#" class="live-show live-button badge badge-dark font-weight-normal text-center d-none mb-2" data-start="1765207500" data-end="1765207800">
+    <object data="/bandit/editions/2025/assets/icons/live.svg" type="image/svg+xml">!</object>
+    Live</a>
+
+                      <p class="mb-2">Closing Remarks
+                      </p>
+                      <p class="font-weight-light mb-2"><a class="text-reset" href="/bandit/editions/2025"> </a>
+                      </p>
+                      <p class="mb-1">
+                      </p>
+                    </td>
+
+            </tr>
+        </tbody>
+      </table>
+    </div>
+      </div>
+    </div>
+  </main>
+  <footer class="container"></footer>
+
+  <!--  
+  <div class="sponsor-banner text-center py-4">
+    <img src="/bandit/editions/2025/assets/images/splash_2025_macau.jpg" alt="Our Partners" class="img-fluid">
+  </div>
+  -->
+
+  <section class="sponsor-banner">
+    <div class="sponsor-grid">
+      <div class="sponsor-column">
+        <h5>Organising Institutions</h5>
+        <div class="sponsor-logos">
+          <img src="/bandit/editions/2025/assets/images/tue-logo.png" alt="TU Eindhoven">
+          <img src="/bandit/editions/2025/assets/images/jads-logo.png" alt="JADS">
+          <img src="/bandit/editions/2025/assets/images/uvt-logo.png" alt="Tilburg University">
+        </div>
+      </div>
+
+      <div class="sponsor-column">
+        <h5>Host Institution</h5>
+        <div class="sponsor-logos">
+          <img src="/bandit/editions/2025/assets/images/macau-logo.png" alt="University of Macau">
+        </div>
+      </div>
+
+      <div class="sponsor-column">
+        <h5>Website Hosting</h5>
+        <div class="sponsor-logos">
+          <img src="/bandit/editions/2025/assets/images/jade-lab-logo.png" alt="JADE Lab">
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="container text-center">
+      BANDIT Workshop 2025
+    </div>
+  </section>
+  
+  <footer class="container">
+  </footer>  
+  </div><div class="modal fade" id="link-modal" tabindex="-1" role="dialog" aria-labelledby="link-modal-label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title" id="link-modal-label">
+          <h3 class="mb-2 font-weight-light"></h3>
+          <h5 class="mb-0 font-weight-light"></h5>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer justify-content-start">
+        <p></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="stream-modal" tabindex="-1" role="dialog" aria-labelledby="link-modal-label" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">
+          Live Stream
+        </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-body embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="" frameborder="none" allowfullscreen="allowfullscreen" seamless="seamless" scrolling="no"></iframe>
+        <div id="stream-placeholder" class="embed-responsive-item d-none justify-content-center align-items-center">
+          <div></div>
+        </div>
+      </div>
+
+      <div class="modal-footer flex-column justify-content-start d-none live-past" id="stream-info" data-time="">
+        <div class="my-0 small align-self-start live-time" id="stream-info-time" data-time=""></div>
+        <div class="pl-2 align-self-start" id="stream-info-color">
+          <p class="mb-0">
+            <a class="text-reset" href="#" id="stream-info-talk"></a>
+          </p>
+          <p class="font-weight-light mb-0" id="stream-info-speakers"></p>
+        </div>
+        <div class="align-self-center m-0 mt-1" id="stream-info-links"></div>
+      </div>
+
+      <div class="modal-footer justify-content-around">
+        <a id="stream-button1" href="#" class="btn btn-outline-primary d-none d-sm-inline " role="button" data-room="Room 8">
+            Room 8
+          </a>
+        <div class="form-group w-100 d-block d-sm-none">
+          <select class="form-control" id="stream-select">
+            <option value="1" >Room 8</option>
+          </select>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Append build time to avoid caching of live program embedded in JavaScript file -->
+  <script src="/bandit/editions/2025/assets/js/main.js?t=1788883396"></script>
+
+</body>
+</html>
+
