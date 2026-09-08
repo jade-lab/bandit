@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>An Empirical Investigation of Ransomware Encryption Techniques and Forensic Evidence Availability - BANDIT - Workshop on Big data analysis AND Illicit Trends</title>
+  <meta name="description" content="Paper by Tjielke Nabuurs, Cristoffer Leite, Indika Kumara, Roya Nasiri, Matthijs Vos, and Justin Hende at BANDIT - Workshop on Big data analysis AND Illicit Trends" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="https://jade-lab.github.io/bandit/editions/2025/assets/images/twitter_preview.png" />
+  <meta name="twitter:title" content="An Empirical Investigation of Ransomware Encryption Techniques and Forensic Evidence Availability" />
+  <meta name="twitter:description" content="Paper by Tjielke Nabuurs, Cristoffer Leite, Indika Kumara, Roya Nasiri, Matthijs Vos, and Justin Hende at BANDIT - Workshop on Big data analysis AND Illicit Trends" />
+
+  <meta property="og:site_name" content="BANDIT - Workshop on Big data analysis AND Illicit Trends" />
+  <meta property="og:image" content="https://jade-lab.github.io/bandit/editions/2025/assets/images/facebook_preview.png" />
+  <meta property="og:url" content="https://jade-lab.github.io/bandit/editions/2025/talks/talk3/" />
+  <meta property="og:title" content="An Empirical Investigation of Ransomware Encryption Techniques and Forensic Evidence Availability" />
+  <meta property="og:description" content="Paper by Tjielke Nabuurs, Cristoffer Leite, Indika Kumara, Roya Nasiri, Matthijs Vos, and Justin Hende at BANDIT - Workshop on Big data analysis AND Illicit Trends" />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="/bandit/editions/2025/assets/css/main.css?t=1788882746" />
+
+  <link rel="preload" as="font" href="/bandit/editions/2025/assets/webfonts/fa-regular-400.woff2" type="font/woff2" crossorigin="anonymous" />
+  <link rel="preload" as="font" href="/bandit/editions/2025/assets/webfonts/fa-solid-900.woff2" type="font/woff2" crossorigin="anonymous" />
+  <link rel="prefetch" as="image" href="/bandit/editions/2025/assets/icons/live.svg" type="image/svg+xml" crossorigin="anonymous" />
+  <link rel="prefetch" as="fetch" href="/bandit/editions/2025/assets/js/data.json" type="application/json" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://github.com" />
+</head>
+
+<body class="pb-4">
+  <header>
+    <!-- navigation bar (web only): --><nav class="navbar fixed-top navbar-expand-md navbar-light bg-light mb-3">
+  <div class="container">
+      <div class="navbar-brand navbar-logo mr-0 ml-1 text-left overflow-hidden">
+        <a href="/bandit/">
+            <img src="/bandit/editions/2025/assets/images/logo.png" class="align-middle" alt="bandit.25" style="max-height: 50px;"/>
+        </a>
+      </div>
+    <a class="navbar-brand" href="/bandit/editions/2025/">BANDIT - Workshop on Big data analysis AND Illicit Trends</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+            <li class="nav-item "><a class="nav-link" href="/bandit/editions/2025/cfp/" title="CFP">
+                CFP
+              </a>
+            </li>
+            <li class="nav-item "><a class="nav-link" href="/bandit/editions/2025/program/" title="Program">
+                Program
+              </a>
+            </li>
+            <li class="nav-item active"><a class="nav-link" href="/bandit/editions/2025/talks/" title="Accepted Papers">
+                Accepted Papers
+              </a>
+            </li>
+            <li class="nav-item "><a class="nav-link" href="/bandit/editions/2025/location/" title="Venue">
+                Venue
+              </a>
+            </li>
+            <li class="nav-item "><a class="nav-link" href="https://conferences.cis.um.edu.mo/ieeebigdata2025/" title="Register">
+                Register
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbar-dropdown5" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                More
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbar-dropdown5">
+                  <a class="dropdown-item" href="/bandit/editions/2025/editions/" title="Previous Editions">
+                    Previous Editions
+                  </a>
+              </div>
+            </li>
+      </ul>
+    </div>
+
+
+  </div>
+</nav>
+
+<script>
+  // Change colour of header and logo
+  window.addEventListener('scroll', function () {
+    const navbar = document.querySelector('.navbar');
+    const logo = document.querySelector('.navbar-logo img');
+
+    if (window.scrollY > 50) {
+      navbar.classList.add('navbar-dark', 'bg-dark');
+      logo.src = '/bandit/editions/2025/assets/images/logo-white.png';
+
+    } else {
+      navbar.classList.remove('navbar-dark', 'bg-dark');
+      logo.src = '/bandit/editions/2025/assets/images/logo.png';
+    }
+  });
+</script>
+
+<script>
+  // Adjust height for fixed-navbar
+  function adjustBodyPadding() {
+    const navbar = document.querySelector('.navbar');
+    if (!navbar) return;
+
+    const navbarHeight = navbar.offsetHeight;
+    document.body.style.paddingTop = navbarHeight + 'px';
+  }
+
+  // Adjust on load and on resize
+  window.addEventListener('load', adjustBodyPadding);
+  window.addEventListener('resize', adjustBodyPadding);
+</script>
+
+<!--
+<script>
+  // Position the notifications below the navbar
+  function positionInfoBarContainer() {
+    const navbar = document.querySelector('.navbar');
+    const infoBarContainer = document.getElementById('info-bar-container');
+
+    if (navbar && infoBarContainer) {
+      const navbarHeight = navbar.offsetHeight;
+      infoBarContainer.style.top = navbarHeight + 'px';
+    }
+  }
+
+  window.addEventListener('load', positionInfoBarContainer);
+  window.addEventListener('resize', positionInfoBarContainer);
+</script>
+--><!-- site title (print only): -->
+      <div class="container d-none d-print-block mt-4 mb-4">
+        <h1 class="display-4">
+          BANDIT - Workshop on Big data analysis AND Illicit Trends
+        </h1>
+      </div></header>
+  <div class="page-wrapper">
+
+  <main class="container">
+
+    <div class="fixed-bottom w-100 d-flex justify-content-end px-3" id="info-bar-container" style="z-index: 1040;">
+      <div class="alerts-container d-flex flex-column align-items-end"></div>
+    </div>
+
+    <br>
+<!---->
+<div class="d-flex flex-md-row flex-column container-fluid mb-2 p-0">
+    <div class="h6 mt-2 mb-0 mr-1 pr-1 pb-1">
+      
+      <span class="d-block d-sm-inline p-1 pl-2 pr-2 border-soft-info bg-soft-info font-weight-normal">
+        Full Papers
+      </span>
+    </div>
+
+    
+      <div class="h6 mt-2 mb-0 ml-1 pr-1 pb-1">
+        
+          
+        
+          
+            <span class="mr-2">Full Paper</span>
+          
+        
+      </div>
+    
+  </div>
+
+  <h1 class="font-weight-light text-break">An Empirical Investigation of Ransomware Encryption Techniques and Forensic Evidence Availability</h1>
+
+  <p class="mb-3 font-weight-light">
+    Tjielke Nabuurs, Cristoffer Leite, Indika Kumara, Roya Nasiri, Matthijs Vos, and Justin Hende
+  </p>
+
+  <div class="mb-3 p-0">
+    
+        
+        
+        <span class="live-hide" data-start="1765198800" data-end="1765200300"><span class="d-none d-sm-inline">on</span> <a href="/bandit/editions/2025/program#b1" class="badge badge-light font-weight-normal text-left ">
+  <i class="far fa-clock"></i>&nbsp;B1, 15:00</a></span><a title="" data-toggle="modal" data-target="#stream-modal" data-room="Room 8" href="#" class="live-show live-button badge badge-dark font-weight-normal text-center d-none " data-start="1765198800" data-end="1765200300">
+    <object data="/bandit/editions/2025/assets/icons/live.svg" type="image/svg+xml">!</object>
+    Live</a><span class="d-none d-sm-inline ml-1">in</span> <a href="/bandit/editions/2025/rooms/room/" class="badge badge-light font-weight-normal"><i class="far fa-square"></i>&nbsp;Room 8</a><span class="d-none d-sm-inline ml-1">for</span> <span class="badge badge-light font-weight-normal text-left">
+  <i class="fas fa-stopwatch"></i>&nbsp;25min
+</span>
+
+        
+      
+    
+        
+        
+        
+        
+        
+      
+    
+  </div>
+
+  <p>Cryptographic ransomware remains one of the most damaging cyber threats. While research on ransomware has advanced, detailed knowledge of encryption tactics and their implications for digital forensics remains fragmented. As a result, the practical applicability of existing methods is limited.</p>
+
+<p>This work addresses these gaps through an empirical investigation of prevalent ransomware encryption techniques and their impact on forensic evidence availability. The investigation of prevalent ransomware encryption was performed using a systematic literature review, mapping ransomware encryption configurations and anti-forensic strategies. Realistic experimental scenarios were subsequently created by simulating OS- and hypervisor-level encryption on disk images. This was followed by artifact carving and parsing to evaluate evidence availability.</p>
+
+<p>The results of the literature review provide an overview of contemporary ransomware encryption practices. The overview reveals clear distinctions between OS and hypervisor encryption in terms of complexity, configurations, and forensic impact. Empirical testing also shows that OS encryption typically leaves most artifacts intact except where targeted anti-forensics are applied. Hypervisor encryption, contrarily, significantly reduces access to critical sources such as Windows event logs.</p>
+
+<p>The findings of this research enhance the field of digital forensics by providing an overview of ransomware encryption practices and revealing their differing impacts on forensic evidence availability.</p>
+
+<style>
+/* Modal + overlay */
+#bibtex-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.45);z-index:9998;}
+#bibtex-modal{display:none;position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);
+  background:#fff;border-radius:8px;padding:18px;box-shadow:0 8px 30px rgba(0,0,0,.25);
+  max-width:680px;width:90%;z-index:9999;font-family:monospace}
+#bibtex-modal h3{margin-top:0;font-family:inherit}
+#bibtex-modal pre{white-space:pre-wrap;font-family:inherit;font-size:0.9rem;background:#f7f7f7;padding:12px;border-radius:4px}
+#bibtex-actions{margin-top:10px;display:flex;gap:8px;justify-content:flex-end}
+.button{padding:6px 10px;border-radius:6px;border:1px solid #bbb;background:#fff;cursor:pointer}
+</style>
+
+<div id="bibtex-overlay" aria-hidden="true"></div>
+
+<div id="bibtex-modal" role="dialog" aria-modal="true" aria-labelledby="bibtex-title" aria-hidden="true">
+  <h3 id="bibtex-title">BibTeX Citation</h3>
+  <pre id="bibtex-text">@inproceedings{Nabuurs2025Ransomware,
+  author    = {Tjielke Nabuurs and Cristoffer Leite and Indika Kumara and 
+               Roya Nasiri and Matthijs Vos and Justin Hende},
+  title     = {An Empirical Investigation of Ransomware Encryption Techniques and Forensic Evidence Availability},
+  booktitle = {Proceedings of the IEEE International Conference on Big Data (Big Data)},
+  year      = {2025},
+  address   = {Macau},
+  publisher = {IEEE}
+}</pre>
+
+  <div id="bibtex-actions">
+    <button class="button" id="copy-bib">Copy</button>
+    <button class="button" id="close-bib">Close</button>
+  </div>
+</div>
+
+<script>
+(function(){
+  const openSelectors = [
+    'a[href="#bibtex-nabuurs"]',                // typical case
+    'a[href$="#bibtex-nabuurs"]'                // defensive
+  ];
+
+  function findBibLinks(){
+    const els = [];
+    openSelectors.forEach(sel => {
+      document.querySelectorAll(sel).forEach(e => els.push(e));
+    });
+    // fallback: check link text
+    if(els.length===0){
+      document.querySelectorAll('a').forEach(a=>{
+        if((a.textContent||'').trim().toLowerCase()==='bibtex') els.push(a);
+      });
+    }
+    return els;
+  }
+
+  function show(){
+    document.getElementById('bibtex-overlay').style.display='block';
+    document.getElementById('bibtex-modal').style.display='block';
+    document.getElementById('bibtex-overlay').setAttribute('aria-hidden','false');
+    document.getElementById('bibtex-modal').setAttribute('aria-hidden','false');
+    // focus for accessibility
+    document.getElementById('close-bib').focus();
+  }
+  function hide(){
+    document.getElementById('bibtex-overlay').style.display='none';
+    document.getElementById('bibtex-modal').style.display='none';
+    document.getElementById('bibtex-overlay').setAttribute('aria-hidden','true');
+    document.getElementById('bibtex-modal').setAttribute('aria-hidden','true');
+  }
+
+  document.addEventListener('DOMContentLoaded',function(){
+    const links = findBibLinks();
+    links.forEach(a=>{
+      a.addEventListener('click', function(ev){
+        ev.preventDefault();
+        show();
+      });
+    });
+
+    document.getElementById('close-bib').addEventListener('click', hide);
+    document.getElementById('bibtex-overlay').addEventListener('click', hide);
+
+    document.getElementById('copy-bib').addEventListener('click', function(){
+      const text = document.getElementById('bibtex-text').textContent;
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(text).then(()=>{
+          this.textContent = 'Copied ✓';
+          setTimeout(()=> this.textContent = 'Copy', 1200);
+        }, ()=> alert('Copy failed — select and copy manually.'));
+      } else {
+        // fallback: select range
+        const range = document.createRange();
+        range.selectNodeContents(document.getElementById('bibtex-text'));
+        const sel = window.getSelection();
+        sel.removeAllRanges();
+        sel.addRange(range);
+        try { document.execCommand('copy'); this.textContent = 'Copied ✓'; setTimeout(()=> this.textContent = 'Copy', 1200); }
+        catch(e){ alert('Your browser blocked automatic copy — select the text and copy manually.'); }
+        sel.removeAllRanges();
+      }
+    });
+
+    // close on ESC
+    document.addEventListener('keydown', function(e){
+      if(e.key === 'Escape') hide();
+    });
+  });
+})();
+</script>
+
+
+
+  
+
+  
+
+  
+
+  <p class="d-print-none mt-5">
+    <a href="/bandit/editions/2025/talks" class="btn btn-light">
+      <i class="fas fa-bullhorn"></i>&nbsp;Accepted Papers
+    </a>
+
+    <a href="/bandit/editions/2025/program" class="btn btn-light">
+      <i class="far fa-calendar-alt"></i>&nbsp;Program
+    </a>
+  </p>
+  </main>
+  <footer class="container"></footer>
+
+  <!--  
+  <div class="sponsor-banner text-center py-4">
+    <img src="/bandit/editions/2025/assets/images/splash_2025_macau.jpg" alt="Our Partners" class="img-fluid">
+  </div>
+  -->
+
+  <section class="sponsor-banner">
+    <div class="sponsor-grid">
+      <div class="sponsor-column">
+        <h5>Organising Institutions</h5>
+        <div class="sponsor-logos">
+          <img src="/bandit/editions/2025/assets/images/tue-logo.png" alt="TU Eindhoven">
+          <img src="/bandit/editions/2025/assets/images/jads-logo.png" alt="JADS">
+          <img src="/bandit/editions/2025/assets/images/uvt-logo.png" alt="Tilburg University">
+        </div>
+      </div>
+
+      <div class="sponsor-column">
+        <h5>Host Institution</h5>
+        <div class="sponsor-logos">
+          <img src="/bandit/editions/2025/assets/images/macau-logo.png" alt="University of Macau">
+        </div>
+      </div>
+
+      <div class="sponsor-column">
+        <h5>Website Hosting</h5>
+        <div class="sponsor-logos">
+          <img src="/bandit/editions/2025/assets/images/jade-lab-logo.png" alt="JADE Lab">
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="container text-center">
+      BANDIT Workshop 2025
+    </div>
+  </section>
+  
+  <footer class="container">
+  </footer>  
+  </div><div class="modal fade" id="link-modal" tabindex="-1" role="dialog" aria-labelledby="link-modal-label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title" id="link-modal-label">
+          <h3 class="mb-2 font-weight-light"></h3>
+          <h5 class="mb-0 font-weight-light"></h5>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer justify-content-start">
+        <p></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="stream-modal" tabindex="-1" role="dialog" aria-labelledby="link-modal-label" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">
+          Live Stream
+        </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-body embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="" frameborder="none" allowfullscreen="allowfullscreen" seamless="seamless" scrolling="no"></iframe>
+        <div id="stream-placeholder" class="embed-responsive-item d-none justify-content-center align-items-center">
+          <div></div>
+        </div>
+      </div>
+
+      <div class="modal-footer flex-column justify-content-start d-none live-past" id="stream-info" data-time="">
+        <div class="my-0 small align-self-start live-time" id="stream-info-time" data-time=""></div>
+        <div class="pl-2 align-self-start" id="stream-info-color">
+          <p class="mb-0">
+            <a class="text-reset" href="#" id="stream-info-talk"></a>
+          </p>
+          <p class="font-weight-light mb-0" id="stream-info-speakers"></p>
+        </div>
+        <div class="align-self-center m-0 mt-1" id="stream-info-links"></div>
+      </div>
+
+      <div class="modal-footer justify-content-around">
+        <a id="stream-button1" href="#" class="btn btn-outline-primary d-none d-sm-inline " role="button" data-room="Room 8">
+            Room 8
+          </a>
+        <div class="form-group w-100 d-block d-sm-none">
+          <select class="form-control" id="stream-select">
+            <option value="1" >Room 8</option>
+          </select>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Append build time to avoid caching of live program embedded in JavaScript file -->
+  <script src="/bandit/editions/2025/assets/js/main.js?t=1788882746"></script>
+
+</body>
+</html>

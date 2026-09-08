@@ -1,0 +1,148 @@
+{
+    "days": [
+        {
+            "name": "14:00-15:25",
+            "hash": "b1",
+            "date": "2025-12-08"
+        },
+        {
+            "name": "15:55-17:30",
+            "hash": "b2",
+            "date": "2025-12-08"
+        }
+    ],
+
+    "rooms": {
+        "Room 8": {
+            "id": 1,
+            "name": "Room 8",
+            "href": "https://github.com"
+        }
+    },
+
+    "speakers": {
+        "Arttu Paju et al." : {
+            "name": "Arttu Paju, Waris Abdullah, and Juha Nurmi",
+            "href": ""
+        },
+        "Diogo Rio et al." : {
+            "name": "Diogo Rio, Krishna Teja Atluri, Giuseppe Cascavilla, and Jessica De Pascale",
+            "href": ""
+        },
+        "Tjielke Nabuurs et al." : {
+            "name": "Tjielke Nabuurs, Cristoffer Leite, Indika Kumara, Roya Nasiri, Matthijs Vos, and Justin Hende",
+            "href": ""
+        },
+        "Pedro Gontijo et al." : {
+            "name": "Pedro Gontijo, Robson Albuquerque, and João Gondim",
+            "href": ""
+        },
+        "Francesco Saccone et al." : {
+            "name": "Francesco Saccone, Alessandro Manzi, Andrea Di Sorbo, Elisa Costante, and Corrado Aaron Visaggio",
+            "href": ""
+        },
+        "Chen-Wei Chang et al." : {
+            "name": "Chen-Wei Chang, Shailik Sarkar, Hossein Salemi, Hyungmin Kim, Shutonu Mitra, Hemant Purohit, Fengxiu Zhang, Michin Hong, Jin-Hee Cho, and Chang-Tien Lu",
+            "href": ""
+        },
+        "Michele Campobasso" : {
+            "name": "Michele Campobasso",
+            "href": ""
+        }
+    },
+
+    "talks": {
+        "Room 8": [
+            {
+                "name": "Opening Remarks",
+                "href": "",
+                "color": "",
+                "speakers": [
+                    "Cristoffer Leite"
+                ],
+                "start": 1765195200,
+                "end": 1765195800
+            },
+            {
+                "name": "Measuring Onion Website Discovery and Tor Users Interests with Honeypots",
+                "href": "/bandit/editions/2025/talks/talk1/",
+                "color": "info",
+                "speakers": [
+                    "Arttu Paju et al."
+                ],
+                "start": 1765195800,
+                "end": 1765197300
+            },
+            {
+                "name": "Uncovering the Darknet: A Hybrid Intelligence Framework for Drug Market Surveillance",
+                "href": "/bandit/editions/2025/talks/talk2/",
+                "color": "info",
+                "speakers": [
+                    "Diogo Rio et al."
+                ],
+                "start": 1765197300,
+                "end": 1765198800
+            },
+            {
+                "name": "An Empirical Investigation of Ransomware Encryption Techniques and Forensic Evidence Availability",
+                "href": "/bandit/editions/2025/talks/talk3/",
+                "color": "info",
+                "speakers": [
+                    "Tjielke Nabuurs et al."
+                ],
+                "start": 1765198800,
+                "end": 1765200300
+            },
+            {
+                "name": "Operationalizing Structured Direction and Planning for Cyber Threat Intelligence: A Practical Implementation for the Brazilian Financial System",
+                "href": "/bandit/editions/2025/talks/talk4/",
+                "color": "success",
+                "speakers": [
+                    "Pedro Gontijo et al."
+                ],
+                "start": 1765202100,
+                "end": 1765203300
+            },
+            {
+                "name": "Design and Implementation of a Multi-Agent Threat Intelligence Assistant based on Generative AI",
+                "href": "/bandit/editions/2025/talks/talk5/",
+                "color": "success",
+                "speakers": [
+                    "Francesco Saccone et al."
+                ],
+                "start": 1765203300,
+                "end": 1765204500
+            },
+            {
+                "name": "Scam Shield: Multi-Model Voting and Fine-Tuned LLMs Against Adversarial Attacks",
+                "href": "/bandit/editions/2025/talks/talk6/",
+                "color": "info",
+                "speakers": [
+                    "Chen-Wei Chang et al."
+                ],
+                "start": 1765204500,
+                "end": 1765206000
+            },
+            {
+                "name": "Keynote Talk",
+                "href": "/bandit/editions/2025/talks/keynote/",
+                "color": "dark",
+                "speakers": [
+                    "Michele Campobasso"
+                ],
+                "start": 1765206000,
+                "end": 1765207500
+            },
+            {
+                "name": "Closing Remarks",
+                "href": "",
+                "color": "dark",
+                "speakers": [
+                    "Cristoffer Leite"
+                ],
+                "start": 1765207500,
+                "end": 1765207800
+            }
+        ]
+    }
+}
