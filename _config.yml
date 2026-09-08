@@ -1,7 +1,7 @@
 title: BANDIT - Workshop on Big data analysis AND Illicit Trends
 preposition: at
 description: >-
-  December 8-11, 2025 @ Macau -- Held with 2025 IEEE International Conference on Big Data (IEEE BigData 2025)
+  December 14-17, 2026 @ Phoenix, Arizona, USA -- Held with 2026 IEEE International Conference on Big Data (IEEE BigData 2026)
 baseurl: "/bandit/" # the subpath of your site, e.g. /blog
 url: "https://jade-lab.github.io" # the base hostname & protocol for your site, e.g. https://example.com
 
@@ -65,7 +65,7 @@ conference:
   tz: "+02:00"
 
   # Show theme errors:
-  show_errors: True
+  show_errors: False
 
   # Navigation bar
   navigation:
@@ -86,7 +86,7 @@ conference:
       - name: Venue
         relative_url: /location/
       - name: Register
-        absolute_url: "https://conferences.cis.um.edu.mo/ieeebigdata2025/"
+        absolute_url: "https://bigdataieee.org/BigData2026/index.html"
       - name: "More"
         disable: true
         relative_url: false
@@ -117,6 +117,13 @@ conference:
 
   # Information boxes
   info_bars:
+    - title: BANDIT 2026
+      color: primary
+      main_only: true
+      text: |
+        ---
+        Details for BANDIT 2026 will be announced soon.
+
     # - title: Archived page!
     #   color: warning
     #   main_only: false
@@ -140,8 +147,8 @@ conference:
 
   # Live indications
   live:
-    date: 08.12.2025
-    timezone: GMT+8
+    date: 14.12.2025
+    timezone: GMT-7
     stop:       240  # in minutes
     streaming:
       enable: true
@@ -188,12 +195,12 @@ conference:
     # display it.
     map:
       # Initial map center point
-      home_coord: 22.144599172900257, 113.5567684330153
+      home_coord: 33.4522049,-112.0706132
       # Alternative map providers can be found on https://leaflet-extras.github.io/leaflet-providers/preview/
       # The following do match the Bootstrap design not too badly:
       #   - Thunderforest.Neighbourhood
       #   - Esri.WorldTopoMap
-      map_provider: "OpenStreetMap.Mapnik"
+      map_provider: "MapyCZ.Basic"
       default_zoom: 18
 
 

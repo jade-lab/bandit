@@ -2,9 +2,9 @@
 layout: location
 ---
 
-The **2nd Workshop on Big Data Analysis and Illicit Trends** will be co-located with [IEEE Big Data 2025](https://conferences.cis.um.edu.mo/ieeebigdata2025/) in Macau, China. The event will take place at the [Galaxy International Convention Center](https://www.galaxymacau.com/mice/gicc/meetings-conferences/).
+The **3rd Workshop on Big Data Analysis and Illicit Trends** will be co-located with [IEEE Big Data 2026](https://conferences.cis.um.edu.mo/ieeebigdata2025/) in Arizona, USA. The event will take place at the [Sheraton Phoenix Downtown](https://dtphx.org/go/sheraton-phoenix-downtown).
 
 ### Information
-* Address: Galaxy Macau Cotai Macau
-* Website: [https://www.galaxymacau.com/mice/gicc/meetings-conferences/](https://www.galaxymacau.com/mice/gicc/meetings-conferences/)
-* Hotel: [https://conferences.cis.um.edu.mo/ieeebigdata2025/venue_hotels.html](https://conferences.cis.um.edu.mo/ieeebigdata2025/venue_hotels.html)
+* Address: Sheraton Phoenix Downtown, Arizona, USA
+* Website: [https://dtphx.org/go/sheraton-phoenix-downtown](https://dtphx.org/go/sheraton-phoenix-downtown)
+* Reserve: [https://book.passkey.com/event/51238598/owner/68648/home](https://book.passkey.com/event/51238598/owner/68648/home)

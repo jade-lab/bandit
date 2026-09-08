@@ -1,11 +1,11 @@
 ---
 layout: home
 ---
-The **2nd Workshop on Big Data Analysis and Illicit Trends** (b&it or "BANDIT") offers a platform for researchers, practitioners, and policymakers to share innovative work towards understanding and addressing illicit activities through big data analytics. The workshop focuses on interdisciplinary approaches that leverage data science, machine learning, and intelligence techniques to uncover hidden patterns in **cybercrime** and other forms of illicit behavior.
+The **3rd Workshop on Big Data Analysis and Illicit Trends** (b&it or "BANDIT") offers a platform for researchers, practitioners, and policymakers to share innovative work towards understanding and addressing illicit activities through big data analytics. The workshop focuses on interdisciplinary approaches that leverage data science, machine learning, and intelligence techniques to uncover hidden patterns in **cybercrime** and other forms of illicit behavior.
 
 This workshop represents an opportunity for the exploratory depiction of the current state of practice along the lines of **actionable Cyber Threat Intelligence (CTI)**, countermeasures to threats and **Open Source INTelligence (OSINT)**, as well as a call to action for further work and transfer of theoretical-practical research around cybersecurity from academia towards practitioners from industry.
 
-The workshop will be held in conjunction with [IEEE Big Data 2025](https://conferences.cis.um.edu.mo/ieeebigdata2025/), taking place in Macau, China, from December 8–11, 2025.
+The workshop will be held in conjunction with [IEEE Big Data 2026](https://bigdataieee.org/BigData2026/index.html), taking place in Phoenix, Arizona, USA from December 14-17, 2026.
 
 **This is a Hybrid event**, allowing for both in-person presentations and remote participation 
 

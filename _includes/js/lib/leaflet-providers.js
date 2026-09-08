@@ -76,6 +76,24 @@
 	 */
 
 	L.TileLayer.Provider.providers = {
+		MapyCZ: {
+			url: 'https://api.mapy.cz/v1/maptiles/{variant}/256/{z}/{x}/{y}?apikey={apikey}',
+			options: {
+				minZoom: 0,
+				maxZoom: 19,
+				variant: 'basic',
+				apikey: '8k8RZ_2rNYvfSzsufejwlKuBnnF0kYmPtfVDhSeBoiE',
+				attribution:
+					'&copy; <a href="https://mapy.cz/" target="_blank">Mapy.cz</a> &copy; <a href="https://www.seznam.cz/" target="_blank">Seznam.cz, a.s.</a>'
+			},
+			variants: {
+				Basic: 'basic',
+				Outdoor: 'outdoor',
+				Aerial: 'aerial',
+				Winter: 'winter',
+				NamesOverlay: 'names-overlay'
+			}
+		},
 		OpenStreetMap: {
 			url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
 			options: {
