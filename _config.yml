@@ -1,23 +1,18 @@
-title: BANDIT - Workshop on Big data analysis AND Illicit Trends
+title: BANDIT - Workshop on Big Data Analysis and Illicit Trends
 preposition: at
-description: >-
-  December 8-11, 2025 @ Macau -- Held with 2025 IEEE International Conference on Big Data (IEEE BigData 2025)
-baseurl: "/bandit" # the subpath of your site, e.g. /blog
-url: "https://jade-lab.github.io" # the base hostname & protocol for your site, e.g. https://example.com
+baseurl: "/bandit"
+url: "https://jade-lab.github.io"
 
-# Remote Theme to use
-remote_theme: "DigitaleGesellschaft/jekyll-theme-conference@v3.6.1" #alternative "DigitaleGesellschaft/jekyll-theme-conference@v3.6.1"
+remote_theme: "DigitaleGesellschaft/jekyll-theme-conference@v3.6.1"
 
 plugins:
   - jekyll-remote-theme
   - jekyll-include-cache
 
-# Build settings
 markdown: kramdown
 sass:
   style: compressed
 
-# Additional exclude from processing
 exclude:
   - vendor
   - .github/
@@ -25,8 +20,11 @@ exclude:
   - LICENSE.md
   - REDISTRIBUTED.md
   - purgecss.config.js
+  - _editions/
+  - .jekyll-build/
+  - Dockerfile
+  - docker-compose.yml
 
-# Collections and their defaults
 collections:
   talks:
     output: true
@@ -55,147 +53,26 @@ defaults:
     values:
       layout: room
 
-
 conference:
-
-  # Language
   lang: en
-
-  # Timezone
   tz: "+02:00"
+  show_errors: true
 
-  # Show theme errors:
-  show_errors: True
-
-  # Navigation bar
-  navigation:
-    logo:
-      name: bandit.25
-      img: 'logo.png'
-      url: '/bandit/'
-    breakpoint: md
-    links:
-      - name: CFP
-        relative_url: /cfp/
-      - name: Program
-        relative_url: /program/
-      - name: Accepted Papers
-        relative_url: /talks/
-      #- name: Speakers
-      #  relative_url: /speakers/
-      - name: Venue
-        relative_url: /location/
-      - name: Register
-        absolute_url: "https://conferences.cis.um.edu.mo/ieeebigdata2025/"
-      - name: "More"
-        disable: true
-        relative_url: false
-        menu:
-          - name: Previous Editions
-            relative_url: /editions/
-
-  # Link Preview for Sharing
   link_preview:
-    # also adapt "preposition" property at top for more meaningful descriptions
     disable: false
     img:
-      twitter: 'twitter_preview.png'      # inside /assets/images/
-      open_graph: 'facebook_preview.png'  # inside /assets/images/
-
-  # Main landing page
-  main:
-    #logo:
-    #  img: 'splash_2025_macau.jpg'
-    links:
-      - name: Program
-        relative_url: /program/
-      - name: How to get there
-        relative_url: /location/
-      - name: Tickets
-        disabled: true
-        absolute_url: ''
-
-  # Information boxes
-  info_bars:
-    - title: List of Accepted Papers available now!
-      color: primary
-      main_only: true
-      text: |
-        ---
-        **Check the Programme and the Accepted Papers below:**
-
-        Links:
-        - [Workshop Programme](/bandit/program/)
-        - [Accepted Papers](/bandit/talks/)
-    # - text: Remember to [submit your paper](https://wi-lab.com/cyberchair/2025/bigdata25/scripts/ws_submit.php) before **Nov 02** for the **second cycle** and to use the [IEEE 2-column format](https://www.ieee.org/conferences/publishing/templates)
-    #   color: warning
-    #   pages_only: true
-
-  # Live indications
-  live:
-    date: 08.12.2025
-    timezone: GMT+8
-    stop:       240  # in minutes
-    streaming:
-      enable: true
-      pause:     60  # in minutes
-      prepend:    5  # in minutes
-      extend:     5  # in minutes
-    demo:
-      enable: false
-      duration: 300  # in seconds
-      pause:     10  # in seconds
+      twitter: 'twitter_preview.png'
+      open_graph: 'facebook_preview.png'
 
   talks:
-    # Talk categories
     main_categories:
       - name: Full Papers
         color: info
       - name: Short Papers
         color: success
       - name: Keynote
-        color:  dark
-  # - `secondary` (your website's secondary color, normally grey)
-  # - `success` (green)
-  # - `alert` (red)
-  # - `warning` (yellow)
-  # - `info` (blue)
-  # - `light` (white)
-  # - `dark` (dark grey)
-
-    # Hide icons on talk overview page
+        color: dark
     hide_icons: false
 
   speakers:
-    # Show first and last name
     show_firstname: true
-
-  location:
-    # Disable links to locations
-    hide: false
-    # URL of location / room overview page
-    url: '/location'
-    # Main page title shown on location/room navigation bar
-    navbar_title: 'Location'
-    # Show map on location main page.  Set `map: false` if you don't want to
-    # display it.
-    map:
-      # Initial map center point
-      home_coord: 22.144599172900257, 113.5567684330153
-      # Alternative map providers can be found on https://leaflet-extras.github.io/leaflet-providers/preview/
-      # The following do match the Bootstrap design not too badly:
-      #   - Thunderforest.Neighbourhood
-      #   - Esri.WorldTopoMap
-      map_provider: "OpenStreetMap.Mapnik"
-      default_zoom: 18
-
-
-  program:
-    # URL of program page
-    url: '/program'
-
-    # Time steps in program table
-    time_steps: 5 # in minutes
-
-    # Show intermediary time steps (next to full hours)
-    show_alltimes: true

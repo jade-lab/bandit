@@ -1,0 +1,13 @@
+services:
+  site:
+    build: .
+    working_dir: /site
+    volumes:
+      - .:/site
+      - bundle_cache:/usr/local/bundle
+    ports:
+      - "4000:4000"
+    command: bash -lc "bundle check || bundle install && bash _tools/serve_editions.sh"
+
+volumes:
+  bundle_cache:

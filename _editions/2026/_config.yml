@@ -1,0 +1,80 @@
+baseurl: "/bandit/2026"
+description: >-
+  2026 edition of BANDIT -- Workshop on Big Data Analysis and Illicit Trends.
+
+edition:
+  year: 2026
+  number: 3
+  short_name: bandit.26
+  hero_image: splash_2025_macau.jpg
+  host_logo: macau-logo.png
+  host_logo_alt: Host institution
+
+conference:
+  show_errors: false
+  navigation:
+    logo:
+      name: bandit.26
+      img: 'logo.png'
+      url: '/bandit/2026/'
+    breakpoint: md
+    links:
+      - name: CFP
+        relative_url: /cfp/
+      - name: Program
+        relative_url: /program/
+      - name: Accepted Papers
+        relative_url: /talks/
+      - name: Venue
+        relative_url: /location/
+      - name: Register
+        disabled: true
+        absolute_url: ""
+      - name: Editions
+        menu:
+          - name: BANDIT 2026
+            absolute_url: /bandit/2026/
+          - name: BANDIT 2025
+            absolute_url: /bandit/2025/
+          - name: BANDIT 2023
+            absolute_url: https://jade-lab.github.io/bandit/
+
+  main:
+    links:
+      - name: Program
+        relative_url: /program/
+      - name: How to get there
+        relative_url: /location/
+
+  info_bars:
+    - title: BANDIT 2026
+      color: primary
+      main_only: true
+      text: |
+        ---
+        Details for BANDIT 2026 will be announced soon.
+
+  live:
+    date: 01.12.2026
+    timezone: GMT+0
+    stop: 240
+    streaming:
+      enable: false
+      pause: 60
+      prepend: 5
+      extend: 5
+    demo:
+      enable: false
+      duration: 300
+      pause: 10
+
+  location:
+    hide: false
+    url: '/location'
+    navbar_title: 'Location'
+    map: false
+
+  program:
+    url: '/program'
+    time_steps: 5
+    show_alltimes: true

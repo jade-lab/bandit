@@ -1,37 +1,30 @@
+name: Test multi-edition Jekyll build
+
 on:
   pull_request:
     types: [opened, synchronize, reopened]
-
-name: Test Jekyll Build
+  workflow_dispatch:
 
 jobs:
   build:
-    name: Generate Website
+    name: Build multi-edition site
     runs-on: ubuntu-latest
+
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
         with:
-          lfs: true
+          ruby-version: '3.1'
+          bundler-cache: true
 
-      - name: Setup Ruby for use with actions
-        uses: actions/setup-ruby@v1
-
-      - name: Cache
-        uses: actions/cache@v1
-        with:
-          path: vendor/bundle
-          key: ${{ runner.os }}-gem-${{ hashFiles('**/Gemfile.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-gem-
-
-      - name: Install Bundler and Jekyll
-        if: steps.cache.outputs.cache-hit != 'true'
-        run: |
-          gem install bundler
-          bundle install --path vendor/bundle
-
-      - name: Build website
-        run: |
-          bundle exec jekyll build -d _site/
+      - name: Build editions
+        run: ./_tools/build_editions.sh
+        env:
+          JEKYLL_ENV: production
+          CURRENT_YEAR: '2026'
+          SITE_BASE: /bandit
+          LOCAL_PREFIX: ''
+          OUTPUT_DIR: _site

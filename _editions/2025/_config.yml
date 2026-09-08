@@ -1,0 +1,85 @@
+baseurl: "/bandit/2025"
+description: >-
+  December 8-11, 2025 @ Macau -- Held with 2025 IEEE International Conference on Big Data (IEEE BigData 2025)
+
+edition:
+  year: 2025
+  number: 2
+  short_name: bandit.25
+  hero_image: splash_2025_macau.jpg
+  host_logo: macau-logo.png
+  host_logo_alt: University of Macau
+
+conference:
+  navigation:
+    logo:
+      name: bandit.25
+      img: 'logo.png'
+      url: '/bandit/2025/'
+    breakpoint: md
+    links:
+      - name: CFP
+        relative_url: /cfp/
+      - name: Program
+        relative_url: /program/
+      - name: Accepted Papers
+        relative_url: /talks/
+      - name: Venue
+        relative_url: /location/
+      - name: Register
+        absolute_url: "https://conferences.cis.um.edu.mo/ieeebigdata2025/"
+      - name: Editions
+        menu:
+          - name: BANDIT 2026
+            absolute_url: /bandit/2026/
+          - name: BANDIT 2025
+            absolute_url: /bandit/2025/
+          - name: BANDIT 2023
+            absolute_url: https://jade-lab.github.io/bandit/
+
+  main:
+    links:
+      - name: Program
+        relative_url: /program/
+      - name: How to get there
+        relative_url: /location/
+
+  info_bars:
+    - title: List of Accepted Papers available now!
+      color: primary
+      main_only: true
+      text: |
+        ---
+        **Check the Programme and the Accepted Papers below:**
+
+        Links:
+        - [Workshop Programme](/bandit/2025/program/)
+        - [Accepted Papers](/bandit/2025/talks/)
+
+  live:
+    date: 08.12.2025
+    timezone: GMT+8
+    stop: 240
+    streaming:
+      enable: true
+      pause: 60
+      prepend: 5
+      extend: 5
+    demo:
+      enable: false
+      duration: 300
+      pause: 10
+
+  location:
+    hide: false
+    url: '/location'
+    navbar_title: 'Location'
+    map:
+      home_coord: 22.144599172900257, 113.5567684330153
+      map_provider: "OpenStreetMap.Mapnik"
+      default_zoom: 18
+
+  program:
+    url: '/program'
+    time_steps: 5
+    show_alltimes: true
