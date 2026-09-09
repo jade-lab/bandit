@@ -18,6 +18,13 @@ The workshop will be held in conjunction with [IEEE Big Data 2026](https://bigda
 <hr class="my-4">
 
 #### Organising Committee
+-   [Júlio Mendonça](https://sites.google.com/view/juliomendonca/home) - Tilburg University (TiU) - 
+<script>
+    const crUSer = "j.mendonca";
+    const crDomain = "tilburguniversity.edu";
+    const crFull = crUSer + "[𐊠Τ]" + crDomain;
+    document.write('<a href="mailto:' + crUSer + '@' + crDomain + '">' + crFull + '</a>');
+</script>
 -   [Cristoffer Leite](https://www.linkedin.com/in/cristofferleite/) - Eindhoven University of Technology (TU/e) - 
 <script>
     const crUSer = "c.leite.da.silva";
@@ -25,21 +32,21 @@ The workshop will be held in conjunction with [IEEE Big Data 2026](https://bigda
     const crFull = crUSer + "[𐊠Τ]" + crDomain;
     document.write('<a href="mailto:' + crUSer + '@' + crDomain + '">' + crFull + '</a>');
 </script>
--   Indika Kumara - Tilburg University (TiU) - 
+-   [Indika Kumara](https://www.tilburguniversity.edu/staff/i-p-k-weerasinghadewage) - Tilburg University (TiU) - 
 <script>
     const inUser = "i.p.k.weerasingha.dewage";
     const inDomain = "tue.nl";
     const inFull = inUser + "[𐊠Τ]" + inDomain;
     document.write('<a href="mailto:' + inUser + '@' + inDomain + '">' + inFull + '</a>');
 </script>
--   Giuseppe Cascavilla - Tilburg University (TiU) - 
+-   [Giuseppe Cascavilla](https://giuseppecascavilla.github.io) - Tilburg University (TiU) - 
 <script>
     const giUser = "g.cascavilla";
-    const giDomain = "jads.nl";
+    const giDomain = "tilburguniversity.edu";
     const giFull = giUser + "[𐊠Τ]" + giDomain;
     document.write('<a href="mailto:' + giUser + '@' + giDomain + '">' + giFull + '</a>');
 </script>
--   Alexios Lekidis - University of Thessaly - 
+-   [Alexios Lekidis](https://energy.uth.gr/en/personnel/lekidis-alexios/) - University of Thessaly - 
 <script>
     const alUser = "alekidis";
     const alDomain = "uth.gr";
@@ -48,12 +55,11 @@ The workshop will be held in conjunction with [IEEE Big Data 2026](https://bigda
 </script>
 
 #### Steering Committee
--	Ana Isabel Barros - Dutch Organisation for Applied Scientific Research (TNO), Tilburg University (TiU)
--	Damian Tamburri - Università del Sannio, Tilburg University (TiU), NXP
--	George Manias - Tilburg University (TiU)
--	João Gondim - University of Brasilia (UnB)
--	Michele Campobasso - Forescout (Vedere Labs)
--	Robson de Albuquerque - University of Brasilia (UnB)
--	Stash Kempinski - Bureau Veritas Cybersecurity, Eindhoven University of Technology (TU/e)
--	Willem-Jan v.d Heuvel - Tilburg University (TiU)
+-   [Daniel Grimm](https://www.tilburguniversity.edu/staff/d-m-grimm) - Tilburg University (TiU)
+-	[George Manias](https://scholar.google.com/citations?user=O0U7ykoAAAAJ&hl=en) - Tilburg University (TiU)
+-   [Jessica De Pascale](https://scholar.google.com/citations?user=trgTJGIAAAAJ&hl=it) - Jheronimus Academy of Data Science (JADS) 
+-	[João Gondim](https://scholar.google.com/citations?user=dnQ9SdwAAAAJ&hl=pt-BR) - University of Brasilia (UnB)
+-	[Michele Campobasso](https://michelecampobasso.github.io) - Forescout (Vedere Labs)
+-	[Robson de Albuquerque](https://scholar.google.com/citations?user=VId1j_kAAAAJ&hl=pt-BR) - University of Brasilia (UnB)
+-	[Stash Kempinski](https://scholar.google.com/citations?user=hXPIq6MAAAAJ&hl=en) - Bureau Veritas Cybersecurity, Eindhoven University of Technology (TU/e)
 

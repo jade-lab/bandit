@@ -21,6 +21,13 @@ The topics of interest related to the workshop include, but are not limited to:
 -   Societal Impact of Cybercriminal Behaviour
 -   Trend Analysis of Drugs and New Psychoactive Substances (NPS)
 
+###### AI & Data-driven Defense of Networked Systems
+-   Data-driven Adaptive Moving-Target Defense using Large-Scale Threat Intelligence
+-   Scalable AI-based Threat/Intrusion Detection in 5G/6G Data Streams
+-   Big Data analytics for secure vehicular network communications
+-   LLM-driven Threat Intelligence and adversarial defense at scale
+-   Big Data-enabled Intrusion Tolerance for Cyber-Physical systems
+
 ###### Misinformation & Online Influence
 -   Analysis of the Role and the Impact of Misinformation in Online Platforms 
 -   Identification of Disinformation Campaigns in Online Platforms with AI.
