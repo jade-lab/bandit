@@ -56,9 +56,11 @@ The workshop will be held in conjunction with [IEEE Big Data 2026](https://bigda
 
 #### Steering Committee
 -   [Daniel Grimm](https://www.tilburguniversity.edu/staff/d-m-grimm) - Tilburg University (TiU)
+-   [Ermeson Andrade](https://sites.google.com/site/ermesoncandrade/) - Federal Rural University of Pernambuco (UFRPE)
 -	[George Manias](https://scholar.google.com/citations?user=O0U7ykoAAAAJ&hl=en) - Tilburg University (TiU)
 -   [Jessica De Pascale](https://scholar.google.com/citations?user=trgTJGIAAAAJ&hl=it) - Jheronimus Academy of Data Science (JADS) 
 -	[João Gondim](https://scholar.google.com/citations?user=dnQ9SdwAAAAJ&hl=pt-BR) - University of Brasilia (UnB)
+-   [Matheus Torquato](https://www.matheustorquato.com/) - University of Coimbra
 -	[Michele Campobasso](https://michelecampobasso.github.io) - Forescout (Vedere Labs)
 -	[Robson de Albuquerque](https://scholar.google.com/citations?user=VId1j_kAAAAJ&hl=pt-BR) - University of Brasilia (UnB)
 -	[Stash Kempinski](https://scholar.google.com/citations?user=hXPIq6MAAAAJ&hl=en) - Bureau Veritas Cybersecurity, Eindhoven University of Technology (TU/e)
