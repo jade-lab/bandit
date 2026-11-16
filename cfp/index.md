@@ -34,7 +34,7 @@ Types of papers:
 - Short papers (position papers, vision papers and extended abstracts): **4-6 pages**
 - Full papers: **8-10 pages including references**
 
-**Review process:** Each submission will be peer-reviewed by at least three experts from the Steering Committee. Evaluation criteria include relevance to the workshop, technical quality, originality, clarity, and potential to stimulate discussion. Selected position papers may be invited and peer-reviewed with shepherding support from the organizing committee. Accepted contributions will be presented during highly interactive workshop sessions designed to foster engagement across academia, industry, government, and law enforcement.
+**Review process:** Each submission will be peer-reviewed by at least two experts from the Steering Committee. Evaluation criteria include relevance to the workshop, technical quality, originality, clarity, and potential to stimulate discussion. Selected position papers may be invited and peer-reviewed with shepherding support from the organizing committee. Accepted contributions will be presented during highly interactive workshop sessions designed to foster engagement across academia, industry, government, and law enforcement.
 
 
 <br />
